@@ -29,13 +29,13 @@ public class Ejercicio03 : MonoBehaviour
         //Movimiento del jugador - Derecha
         if (Input.GetKeyDown(KeyCode.D))
         {
-            rb.velocity = new Vector2(speed, 0);
+            rb.velocity = new Vector2(speed, rb.velocity.y);
         }
 
         //Movimiento del jugador - Izquierda
         if (Input.GetKeyDown(KeyCode.A))
         {
-            rb.velocity = new Vector2(-speed, 0);
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
         }
 
         //Rotacion del jugador
@@ -49,7 +49,7 @@ public class Ejercicio03 : MonoBehaviour
         if (Input.GetButton("Jump") && !isJumping)
         {
             rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            Debug.Log("Estoy saltando Wiiii");
+            Debug.Log("I´m jumping Wiiii");
             isJumping = true;
         }
     }

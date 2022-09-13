@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ejercicio05 : MonoBehaviour
@@ -11,13 +9,13 @@ public class Ejercicio05 : MonoBehaviour
         switch (action)
         {
             case "Heal":
-                Debug.Log("Me curé");
+                Debug.Log("Heal");
                 break;
             case "Attack":
-                Debug.Log("Hago daño");
+                Debug.Log("Make Damage");
                 break;
             case "SpecialAttack":
-                Debug.Log("Empiezo a girar como trompo");
+                Debug.Log("I start to spin like a beyblade");
                 break;
         }
     }
