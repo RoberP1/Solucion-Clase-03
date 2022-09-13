@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Ejercicio04 : MonoBehaviour
 {
-    public List<string> enemigos = new List<string>() { "Orco","Araña","Golem","Goblin"};
+    public List<string> enemigos = new List<string>() { "Orco","Mosquito","Golem","Goblin"};
 
-    string enemigo = "Araña";
+    string enemigo = "Mosquito";
 
 	bool EncontrarEnemigo()
 	{
