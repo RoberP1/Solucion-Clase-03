@@ -50,7 +50,7 @@ public class Ejercicio03 : MonoBehaviour
         //Salto del jugador 
         if (Input.GetButton("Jump") && !isJumping)
         {
-            rb2d.AddForce(Vector2.up * jumpForce);
+            rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             Debug.Log("Estoy saltando Wiiii");
             isJumping = true;
         }
