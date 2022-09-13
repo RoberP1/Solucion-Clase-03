@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class Ejercicio05 : MonoBehaviour
 {
-    /*---- Mejora el Switch ----*/
+    string action = "Attack";
+    int ability = 1;
 
-    //Dato: como podriamos hacer para no usar tantos "if"?
-
-    string Acción = "Attack";
-    int Habilidad = 1;
+    enum abilities{
+        Heal = 1,
+        Attack = 2,
+        SpecialAttack = 3
+    }
 
     void EjecutarAcción()
     {
-        switch (Habilidad)
+        if ((abilities)ability.ToString() != action) return;
+        switch (ability)
         {
             case 1:
-                if(Acción == "Heal")
-                    Debug.Log("Me curé");
+                Debug.Log("Me curé");
                 break;
             case 2:
-                if (Acción == "Attack")
-                    Debug.Log("Hago daño");
+                Debug.Log("Hago daño");
                 break;
             case 3:
-                if (Acción == "Special Attack")
-                    Debug.Log("Empiezo a girar como trompo");
+                Debug.Log("Empiezo a girar como trompo");
                 break;
-         
         }
     }
 }
-}
+
+
