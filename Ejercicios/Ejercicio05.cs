@@ -5,26 +5,18 @@ using UnityEngine;
 public class Ejercicio05 : MonoBehaviour
 {
     string action = "Attack";
-    int ability = 1;
-
-    enum abilities{
-        Heal = 1,
-        Attack = 2,
-        SpecialAttack = 3
-    }
 
     void EjecutarAcción()
     {
-        if ((abilities)ability.ToString() != action) return;
-        switch (ability)
+        switch (action)
         {
-            case 1:
+            case "Heal":
                 Debug.Log("Me curé");
                 break;
-            case 2:
+            case "Attack":
                 Debug.Log("Hago daño");
                 break;
-            case 3:
+            case "SpecialAttack":
                 Debug.Log("Empiezo a girar como trompo");
                 break;
         }
