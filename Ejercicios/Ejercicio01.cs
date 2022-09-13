@@ -5,13 +5,7 @@ using UnityEngine;
 
 public class Ejercicio01 : MonoBehaviour
 {
-    /*---- Busca la inconcistencia del codigo ----*/
-
-    public float Fuerza = 100f;
-
-
     private Rigidbody2D rb_2d; 
-
 
     public float speed; 
 
@@ -26,7 +20,6 @@ public class Ejercicio01 : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Verical");
 
-        rb_2d.velocity = new Vector2(x * speed, y);
-
+        rb_2d.velocity = new Vector2(x , y) * speed;
     }
 }
